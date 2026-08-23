@@ -37,9 +37,6 @@ img {
   max-width: 100%;
   display: block;
 }
-a {
-  text-decoration: none;
-}
 .container {
   min-height: 100vh;
   min-height: 100dvh;
@@ -94,6 +91,7 @@ a {
   font-weight: var(--font-weight-extra-bold);
 }
 .card__title-link {
+  text-decoration: none;
   color: inherit;
 }
 .card__title-link:hover,
@@ -125,6 +123,10 @@ a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.attribution a:hover,
+.attribution a:focus-visible {
+  color: hsl(228, 83%, 55%);
 }
 @media (min-width: 1024px) {
   .card {
